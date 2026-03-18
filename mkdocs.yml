@@ -1,7 +1,7 @@
 site_name: Retro Monitor Repair Wiki
 site_description: Complete repair guides for vintage CRT monitors
 site_author: Retro Monitor Repair Team
-site_url: https://noodlestormno.github.io/retromonitor/
+site_url: https://retromonitor.org/
 
 theme:
   name: material
