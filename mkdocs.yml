@@ -1,0 +1,74 @@
+site_name: Retro Monitor Repair Wiki
+site_description: Complete repair guides for vintage CRT monitors
+site_author: Retro Monitor Repair Team
+site_url: https://noodlestormno.github.io/retromonitor/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 2-4
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Commodore:
+    - Amiga 1080:
+      - No Raster (Screen Completely Dark): monitors/commodore/amiga1080/no-raster-dark.md
+      - Power Supply Failure: monitors/commodore/amiga1080/power-supply-failure.md
+      - No Vertical Sync: monitors/commodore/amiga1080/no-vertical-sync.md
+      - No Horizontal Sync: monitors/commodore/amiga1080/no-horizontal-sync.md
+      - No Vertical Sweep: monitors/commodore/amiga1080/no-vertical-sweep.md
+      - No Raster (Sound OK): monitors/commodore/amiga1080/no-raster-sound-ok.md
+      - No Picture, Normal Sound: monitors/commodore/amiga1080/no-picture-normal-sound.md
+      - No Picture in RGB Mode: monitors/commodore/amiga1080/no-picture-rgb-mode.md
+      - No Raster in RGB Mode: monitors/commodore/amiga1080/no-raster-rgb-mode.md
+      - No Color (Monochrome): monitors/commodore/amiga1080/no-color-monochrome.md
+      - Specific Tinted Color: monitors/commodore/amiga1080/specific-tinted-color.md
+      - No Sound: monitors/commodore/amiga1080/no-sound.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/NoodleStormno/retromonitor
+    - icon: fontawesome/solid/globe
+      link: https://retroconsolewiki.org/
+
+copyright: |
+  &copy; 2026 Retro Monitor Repair Team. All content is provided for educational purposes only.
+  Repairing CRT monitors involves high voltage and should only be attempted by qualified technicians.
